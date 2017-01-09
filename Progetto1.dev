@@ -101,7 +101,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit6]
-FileName=eccezzione.h
+FileName=eccezione.h
 CompileCpp=1
 Folder=
 Compile=1

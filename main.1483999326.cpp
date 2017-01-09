@@ -2,15 +2,12 @@
 #include "manoscritto.h"
 #include <iostream>
 #include <cstring>
-#include "lettera.h"
-#include "eccezione.h"
 
 using namespace std;
 using namespace Libri;
 
 int main() {
 	
-	lettera l;
 	manoscritto m,m1;
 	manoscritto m2(35215,"Giovanni",432,".txt");
 	manoscritto m3;

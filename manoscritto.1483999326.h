@@ -8,7 +8,7 @@ using namespace std;
 namespace Libri{
 	
 	class manoscritto{
-		protected:
+		private:
 			int codice;
 			char* autore;
 			int numpag;
@@ -17,8 +17,8 @@ namespace Libri{
 			void set_aut(const char*);
 			void set_nump(const int);
 			void set_form(const char*);
-			virtual void print(ostream & os)const;
-			virtual void read(istream & in);
+			void print(ostream & os)const;
+			void read(istream & in);
 			
 		public:
 			manoscritto();

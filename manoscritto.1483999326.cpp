@@ -19,7 +19,7 @@ void manoscritto::set_form(const char* form){
 	strcpy(formato,form);
 }
 void manoscritto::print(ostream & os)const{
-	os << codice << ' ' << autore << ' ' << numpag << ' ' << formato << ' ';
+	os << codice << ' ' << autore << ' ' << numpag << ' ' << formato << endl;
 }
 void manoscritto::read(istream & in){
 	int buf;
