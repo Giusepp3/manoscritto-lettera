@@ -2,7 +2,6 @@
 #define MANOSCRITTO_H
 #include <iostream>
 #include <cstring>
-#include <fstream>
 
 using namespace std;
 
@@ -33,9 +32,6 @@ namespace Libri{
 			char* get_form()const;
 			friend ostream & operator<<(ostream & os, const manoscritto &);
 			friend istream & operator>>(istream & in, manoscritto &);
-			virtual void visualizza_dati(ostream & of)const;
-			virtual bool memorizza_dati(const char* file)const;
-		
 						
 	};
 	

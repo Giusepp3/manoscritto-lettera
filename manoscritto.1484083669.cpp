@@ -101,25 +101,6 @@ istream & operator>>(istream & in, manoscritto & m){
 	return in;
 	
 }
-
-void manoscritto::visualizza_dati(ostream & of)const{
-	print(of);
-}
-
-bool manoscritto::memorizza_dati(const char* file = "dati.dat")const{
-	ofstream of;
-	
-	of.open(file, ios::out | ios::binary);
-	if (of.fail()) return false;
-	of.write((char*)&codice,sizeof(codice));
-	of.write((char*)&autore,sizeof(autore));
-	of.write((char*)&numpag,sizeof(numpag));
-	of.write((char*)&formato,sizeof(formato));
-	
-	of.close();
-}
-	
-
 	
 	
 }
